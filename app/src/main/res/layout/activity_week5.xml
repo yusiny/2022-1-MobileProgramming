@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:text="Practice / Assignment" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/week5_prac1_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="[practice1] Edit text"
+                style="@style/tv_btn" />
+
+            <Button
+                android:id="@+id/week5_prac2_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="[practice2] Checkbox and Radio Button"
+                style="@style/tv_btn" />
+
+            <Button
+                android:id="@+id/week5_assign1_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="[assignment1]"
+                style="@style/tv_btn" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginVertical="30dp"
+            android:background="@color/light_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Service Example"
+            style="@style/tv_title"
+            android:layout_marginHorizontal="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/week5_start_service_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="start service"
+                style="@style/tv_btn" />
+            <Button
+                android:id="@+id/week5_stop_service_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="stop service"
+                style="@style/tv_btn" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginVertical="30dp"
+            android:background="@color/light_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Event Listener Example"
+            style="@style/tv_title"
+            android:layout_marginHorizontal="10dp"/>
+        <Button
+            android:id="@+id/myButton"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:text="Press me" />
+
+    </LinearLayout>
+</ScrollView>

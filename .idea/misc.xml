@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Win10/AndroidStudioProjects/2022MobileProgramming/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/Win10/AndroidStudioProjects/2022MobileProgramming/app/src/main/res/layout/activity_week2.xml" value="0.33" />
+        <entry key="..\:/Users/Win10/AndroidStudioProjects/2022MobileProgramming/app/src/main/res/layout/activity_week2_prac1.xml" value="0.33" />
+        <entry key="..\:/Users/Win10/AndroidStudioProjects/2022MobileProgramming/app/src/main/res/layout/activity_week2_prac2.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/Win10/AndroidStudioProjects/2022MobileProgramming/app/src/main/res/layout/activity_week2_prac3.xml" value="0.5" />
+        <entry key="..\:/Users/Win10/AndroidStudioProjects/2022MobileProgramming/app/src/main/res/layout/activity_week2_prac4.xml" value="0.25" />
+        <entry key="..\:/Users/Win10/AndroidStudioProjects/2022MobileProgramming/app/src/main/res/layout/activity_week3.xml" value="0.33" />
+        <entry key="..\:/Users/Win10/AndroidStudioProjects/2022MobileProgramming/app/src/main/res/layout/activity_week3_prac1.xml" value="0.25" />
+        <entry key="..\:/Users/Win10/AndroidStudioProjects/2022MobileProgramming/app/src/main/res/layout/activity_week3_prac2.xml" value="0.27239583333333334" />
+        <entry key="..\:/Users/Win10/AndroidStudioProjects/2022MobileProgramming/app/src/main/res/layout/activity_week5.xml" value="0.25" />
+        <entry key="..\:/Users/Win10/AndroidStudioProjects/2022MobileProgramming/app/src/main/res/layout/activity_week5_assign.xml" value="0.27239583333333334" />
+        <entry key="..\:/Users/Win10/AndroidStudioProjects/2022MobileProgramming/app/src/main/res/layout/activity_week5_assign_next.xml" value="0.27239583333333334" />
+        <entry key="..\:/Users/Win10/AndroidStudioProjects/2022MobileProgramming/app/src/main/res/layout/activity_week5_prac1.xml" value="0.27239583333333334" />
+        <entry key="..\:/Users/Win10/AndroidStudioProjects/2022MobileProgramming/app/src/main/res/layout/activity_week5_prac2.xml" value="0.25" />
+        <entry key="..\:/Users/Win10/AndroidStudioProjects/2022MobileProgramming/app/src/main/res/layout/activity_week6.xml" value="0.25" />
+        <entry key="..\:/Users/Win10/AndroidStudioProjects/2022MobileProgramming/app/src/main/res/layout/activity_week6_prac1.xml" value="0.27239583333333334" />
+        <entry key="..\:/Users/Win10/AndroidStudioProjects/2022MobileProgramming/app/src/main/res/layout/activity_week6_prac2.xml" value="0.27239583333333334" />
+        <entry key="..\:/Users/Win10/AndroidStudioProjects/2022MobileProgramming/app/src/main/res/layout/activity_week6_prac3.xml" value="0.27239583333333334" />
+        <entry key="..\:/Users/Win10/AndroidStudioProjects/2022MobileProgramming/app/src/main/res/layout/fragment_week6_main.xml" value="0.27239583333333334" />
+        <entry key="..\:/Users/Win10/AndroidStudioProjects/2022MobileProgramming/app/src/main/res/layout/fragment_week6_menu.xml" value="0.27239583333333334" />
+        <entry key="..\:/Users/Win10/AndroidStudioProjects/2022MobileProgramming/app/src/main/res/layout/fragment_week6_prac1.xml" value="0.27239583333333334" />
+        <entry key="..\:/Users/Win10/AndroidStudioProjects/2022MobileProgramming/app/src/main/res/layout/fragment_week6_prac1_fragment1.xml" value="0.27239583333333334" />
+        <entry key="..\:/Users/Win10/AndroidStudioProjects/2022MobileProgramming/app/src/main/res/layout/fragment_week6_prac1_fragment2.xml" value="0.27239583333333334" />
+        <entry key="..\:/Users/Win10/AndroidStudioProjects/2022MobileProgramming/app/src/main/res/layout/fragment_week6_prac1_main.xml" value="0.27239583333333334" />
+        <entry key="..\:/Users/Win10/AndroidStudioProjects/2022MobileProgramming/app/src/main/res/layout/fragment_week6_prac1_menu.xml" value="0.27239583333333334" />
+        <entry key="..\:/Users/Win10/AndroidStudioProjects/2022MobileProgramming/app/src/main/res/layout/item_button.xml" value="0.2046875" />
+        <entry key="..\:/Users/Win10/AndroidStudioProjects/2022MobileProgramming/app/src/main/res/layout/sub1.xml" value="0.22314814814814815" />
+        <entry key="..\:/Users/Win10/AndroidStudioProjects/2022MobileProgramming/app/src/main/res/layout/week3_prac1_sub1.xml" value="0.27239583333333334" />
+        <entry key="..\:/Users/Win10/AndroidStudioProjects/2022MobileProgramming/app/src/main/res/menu/menu_webview.xml" value="0.27239583333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="SuppressABINotification">
+    <option name="modulesWithSuppressedNotConfigured">
+      <set>
+        <option value="2022MobileProgramming.app" />
+      </set>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.a2022mobileprogramming" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.2022MobileProgramming" >
+        <service
+            android:name=".ui.week5.MyService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Week2: View and Layouts -->
+        <activity
+            android:name=".ui.week2.Week2Activity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.week2.Week2Prac1Activity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.week2.Week2Prac2Activity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.week2.Week2Prac3Activity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.week2.Week2Prac4Activity"
+            android:exported="true" />
+
+        <!-- Week3: Application basic: Lifecycle of Activity -->
+        <activity
+            android:name=".ui.week3.Week3Activity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.week3.Week3Prac1Activity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.week3.Week3Prac2Activity"
+            android:exported="true" />
+
+        <!-- Week5: Widgets and Event -->
+        <activity
+            android:name=".ui.week5.Week5Activity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.week5.Week5Prac1Activity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.week5.Week5Prac2Activity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.week5.Week5AssignActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.week5.Week5AssignNextAcitivity"
+            android:exported="true" />
+
+        <!-- Week6: Widgets and Event - advanced -->
+        <activity
+            android:name=".ui.week6.Week6Activity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.week6.Week6Prac1Activity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.week6.Week6Prac2Activity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.week6.Week6Prac3Activity"
+            android:exported="true" />
+
+    </application>
+
+</manifest>

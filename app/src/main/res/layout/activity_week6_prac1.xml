@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/week6_prac1_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/week6_prac1_fragment1"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.example.a2022mobileprogramming.ui.week6.fragment.Week6Prac1Fragment1Fragment"/>
+    <fragment
+        android:id="@+id/week6_prac1_fragment2"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.example.a2022mobileprogramming.ui.week6.fragment.Week6Prac1Fragment2Fragment"/>
+</LinearLayout>

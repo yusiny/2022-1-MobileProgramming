@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#886498ed"
+    android:padding="2dp">
+
+    <TextView
+        android:id="@+id/week5_prac1_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="#ffffff00"
+        android:text="@string/ACME_Corp_Cation" />
+
+    <EditText
+        android:id="@+id/week5_prac1_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:hint="@string/Enter_your_First_and_Last_name"
+        android:textSize="18sp"
+        android:inputType="textCapWords|textAutoCorrect"/>
+
+    <Button
+        android:id="@+id/week5_prac1_login_btn"
+        android:layout_width="82dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="@string/login" />
+
+</LinearLayout>

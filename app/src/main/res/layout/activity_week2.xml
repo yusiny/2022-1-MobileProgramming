@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Practice"
+            style="@style/tv_title"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/week2_prac1_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="[practice1] LinearLayout"
+                style="@style/tv_btn" />
+            <Button
+                android:id="@+id/week2_prac2_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="[practice2] FrameLayout"
+                style="@style/tv_btn" />
+            <Button
+                android:id="@+id/week2_prac3_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="[practice3] TableLayout"
+                style="@style/tv_btn" />
+            <Button
+                android:id="@+id/week2_prac4_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="[practice4] ScrollLayout"
+                style="@style/tv_btn" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/light_gray"
+            android:layout_marginVertical="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Linear Layout"
+            style="@style/tv_title"/>
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:orientation="vertical">
+
+            <!--  fill attribute test  -->
+            <TextView
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:text="hello_world" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="button" />
+
+            <!-- gravity test -->
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="LEFT" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="CENTER" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="RIGHT" />
+
+            <!-- margin & padding test -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff00"
+                    android:padding="20dp"
+                    android:text="텍스트"
+                    android:textColor="#ffff0000"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:background="#00FFD9"
+                    android:text="텍스트"
+                    android:textColor="#ffff0000"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#E70BFF"
+                    android:padding="20dp"
+                    android:text="텍스트"
+                    android:textColor="#ffff0000"
+                    android:textSize="24dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/light_gray"
+            android:layout_marginVertical="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Relative Layout"
+            style="@style/tv_title"/>
+        <RelativeLayout
+            android:id="@+id/RelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:background="#B4B4FF"
+            android:padding="10px">
+
+            <TextView
+                android:id="@+id/label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffff0077"
+                android:text="Type here: " />
+
+            <EditText
+                android:id="@+id/entry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/label" />
+
+            <Button
+                android:id="@+id/ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/entry"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10px"
+                android:text="OK" />
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/ok"
+                android:layout_toLeftOf="@id/ok"
+                android:text="CANCEL" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/light_gray"
+            android:layout_marginVertical="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Frame Layout"
+            style="@style/tv_title"/>
+        <FrameLayout
+            android:id="@+id/FrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/android_green" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Print Picture" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/light_gray"
+            android:layout_marginVertical="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Table Layout"
+            style="@style/tv_title"/>
+        <TableLayout
+            android:id="@+id/TableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="*">
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Open..." />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="Ctrl-O" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Save as..." />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="Ctrl-Shift-S" />
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+</ScrollView>
