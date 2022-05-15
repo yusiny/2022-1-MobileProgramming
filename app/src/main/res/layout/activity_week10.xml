@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:text="Example 1 - Drawable class" />
+
+        <Button
+            android:id="@+id/week10_exam1_btn"
+            style="@style/tv_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="[example1] Drawable" />
+
+        <TextView
+            style="@style/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:text="Example 2 - Layers" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/item_layers" />
+
+        <TextView
+            style="@style/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:text="Example 3 - Transition" />
+
+        <ImageButton
+            android:id="@+id/week10_img_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/transition_my_transition" />
+
+        <TextView
+            style="@style/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:text="Example 4 - State List" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_button"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginVertical="30dp"
+            android:background="@color/light_gray" />
+
+        <TextView
+            style="@style/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:text="Example - Bitmap" />
+
+        <Button
+            android:id="@+id/week10_exam2_btn"
+            style="@style/tv_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="[example2] Bitmap" />
+
+        <TextView
+            style="@style/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:text="Example 3 - Drawable rotate" />
+
+        <Button
+            android:id="@+id/week10_exam3_btn"
+            style="@style/tv_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="[example3] Rotate" />
+    </LinearLayout>
+</ScrollView>

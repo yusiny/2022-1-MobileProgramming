@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import com.example.a2022mobileprogramming.databinding.ActivityWeek3Binding;
 
@@ -22,6 +23,15 @@ public class Week3Activity extends AppCompatActivity {
         setContentView(view);
 
         /*Practice 이동 이벤트 리스너*/
+        initClickListener();
+
+        /*Examples 클릭 이벤트 리스너*/
+        implicitExamples();
+        explicitExample();
+    }
+
+    /*Practice 이동 이벤트 리스너*/
+    private void initClickListener(){
         binding.week3Prac1Btn.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -37,8 +47,12 @@ public class Week3Activity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
 
-        /*클릭 이벤트 리스너*/
+    /* Implicit Intent - Examples */
+    private void implicitExamples(){
+
+        // 모든 연락처 보기
         binding.week3ContactAllBtn.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -48,6 +62,7 @@ public class Week3Activity extends AppCompatActivity {
             }
         });
 
+        // 특정 연락처 보기
         binding.week3ContactParticularBtn.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -57,6 +72,34 @@ public class Week3Activity extends AppCompatActivity {
             }
         });
 
+        // 특정 연락처 보기 by tel with VIEW, DIAL
+        binding.week3TelViewBtn.setOnClickListener(new Button.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                String tel = binding.week3TelEt.getText().toString();
+
+                if(!tel.isEmpty()) {
+                    tel = "tel:" + tel;
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(tel));
+                    startActivity(intent);
+                }
+            }
+       });
+
+        binding.week3TelDialBtn.setOnClickListener(new Button.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                String tel = binding.week3TelEt.getText().toString();
+
+                if(!tel.isEmpty()){
+                    tel = "tel:" + tel;
+                    Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse(tel));
+                    startActivity(intent);
+                }
+            }
+        });
+
+        // 연락처 수정
         binding.week3ContactEditBtn.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -66,15 +109,17 @@ public class Week3Activity extends AppCompatActivity {
             }
         });
 
+        // 앨범 사진 보기
         binding.week3AlbumBtn.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
-                intent.setType("image/picures/*");
+                intent.setType("image/pictures/*");
                 startActivity(intent);
             }
         });
 
+        // 메시지 보내기
         binding.week3SendMsgBtn.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -90,6 +135,7 @@ public class Week3Activity extends AppCompatActivity {
             }
         });
 
+        // 웹 검색하기
         binding.week3SearchBtn.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -106,4 +152,21 @@ public class Week3Activity extends AppCompatActivity {
         });
     }
 
+    private void explicitExample(){
+        binding.week3NewActivityBtn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(Week3Activity.this, NewActivity.class);
+                startActivityForResult(intent,1);
+            }
+        });
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        String name = data.getStringExtra("name");
+        Toast.makeText(this, "전닫받은 name 값: "+ name, Toast.LENGTH_SHORT).show();
+    }
 }

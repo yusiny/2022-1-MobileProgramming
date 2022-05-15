@@ -55,6 +55,9 @@
         <activity
             android:name=".ui.week3.Week3Prac2Activity"
             android:exported="true" />
+        <activity
+            android:name=".ui.week3.NewActivity"
+            android:exported="true" />
 
         <!-- Week5: Widgets and Event -->
         <activity
@@ -72,6 +75,9 @@
         <activity
             android:name=".ui.week5.Week5AssignNextAcitivity"
             android:exported="true" />
+        <activity
+            android:name=".ui.week5.Week5Exam1Activity"
+            android:exported="true" />
 
         <!-- Week6: Widgets and Event - advanced -->
         <activity
@@ -87,6 +93,43 @@
             android:name=".ui.week6.Week6Prac3Activity"
             android:exported="true" />
 
-    </application>
 
+        <!-- Week7: Graphics and Animation(1) -->
+        <activity
+            android:name=".ui.week7.Week7Activity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.week7.Week7Example1Activity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.week7.Week7Example2Activity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.week7.Week7Prac1Activity"
+            android:exported="true" />
+
+        <!-- Week9: Kotlin -->
+        <activity
+            android:name=".ui.week9.Week9Activity"
+            android:exported="true" />
+
+        <!-- Week10: Graphics and Animation(2) -->
+        <activity
+            android:name=".ui.week10.Week10Activity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.week10.Week10Exam1Activity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.week10.Week10Exam2Activity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.week10.Week10Exam3Activity"
+            android:exported="true" />
+
+        <!-- Week11: Data (Data persistence, sqlite db, data networking) -->
+        <activity
+            android:name=".ui.week11.Week11Activity"
+            android:exported="true" />
+    </application>
 </manifest>

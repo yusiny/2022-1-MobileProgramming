@@ -47,6 +47,13 @@ public class Week5Activity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(), Week5AssignActivity.class));
             }
         });
+
+        binding.week5MenuExampleBtn.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), Week5Exam1Activity.class));
+            }
+        });
     }
 
     /*[Example] Service*/

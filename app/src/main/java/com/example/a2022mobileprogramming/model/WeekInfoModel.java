@@ -1,17 +1,20 @@
 package com.example.a2022mobileprogramming.model;
 
-import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
 @Builder
 public class WeekInfoModel {
     int myWeek;
     String mySubject;
+
+    public WeekInfoModel(int week, String subject) {
+        setWeek(week);
+        setSubject(subject);
+    }
 
     public int getWeek() {
         return myWeek;

@@ -85,6 +85,34 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"/>
 
+            //Edittext
+            <EditText
+                android:id="@+id/week3_tel_et"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:hint="전화번호를 입력하세요."
+                app:layout_constraintTop_toTopOf="@id/week3_tel_view_btn"
+                app:layout_constraintBottom_toBottomOf="@id/week3_tel_view_btn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/week3_tel_view_btn"
+                android:layout_marginHorizontal="10dp" />
+            <Button
+                android:id="@+id/week3_tel_view_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VIEW"
+                app:layout_constraintTop_toBottomOf="@id/week3_album_btn"
+                app:layout_constraintStart_toEndOf="@id/week3_tel_et"
+                app:layout_constraintEnd_toStartOf="@id/week3_tel_dial_btn"/>
+            <Button
+                android:id="@+id/week3_tel_dial_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DIAL"
+                app:layout_constraintTop_toBottomOf="@id/week3_album_btn"
+                app:layout_constraintStart_toEndOf="@id/week3_tel_view_btn"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
             <EditText
                 android:id="@+id/week3_msg_et"
                 android:layout_width="0dp"
@@ -100,7 +128,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="문자 보내기"
-                app:layout_constraintTop_toBottomOf="@id/week3_album_btn"
+                app:layout_constraintTop_toBottomOf="@id/week3_tel_et"
                 app:layout_constraintEnd_toEndOf="parent"/>
 
             <EditText
@@ -121,6 +149,24 @@
                 app:layout_constraintTop_toBottomOf="@id/week3_send_msg_btn"
                 app:layout_constraintEnd_toEndOf="parent"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/light_gray"
+            android:layout_marginVertical="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Explicit Intent Example"
+            style="@style/tv_title"
+            android:layout_marginHorizontal="10dp"/>
+        <Button
+            android:id="@+id/week3_new_activity_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="새 화면 띄우기"/>
 
     </LinearLayout>
 </ScrollView>

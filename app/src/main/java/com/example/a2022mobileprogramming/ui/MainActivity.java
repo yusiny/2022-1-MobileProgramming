@@ -9,10 +9,13 @@ import android.view.View;
 import com.example.a2022mobileprogramming.adapter.MainRVAdapter;
 import com.example.a2022mobileprogramming.databinding.ActivityMainBinding;
 import com.example.a2022mobileprogramming.model.WeekInfoModel;
+import com.example.a2022mobileprogramming.ui.week10.Week10Activity;
 import com.example.a2022mobileprogramming.ui.week2.Week2Activity;
 import com.example.a2022mobileprogramming.ui.week3.Week3Activity;
 import com.example.a2022mobileprogramming.ui.week5.Week5Activity;
 import com.example.a2022mobileprogramming.ui.week6.Week6Activity;
+import com.example.a2022mobileprogramming.ui.week7.Week7Activity;
+import com.example.a2022mobileprogramming.ui.week9.Week9Activity;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -31,6 +34,9 @@ public class MainActivity extends AppCompatActivity {
         adapter.addItem(new WeekInfoModel(3, "Lifecycle of Activity"));
         adapter.addItem(new WeekInfoModel(5, "Widgets and Event"));
         adapter.addItem(new WeekInfoModel(6, "Widgets and Event - Advanced"));
+        adapter.addItem(new WeekInfoModel(7, "Graphic and Animation (1)"));
+        adapter.addItem(new WeekInfoModel(9, "Kotlin"));
+        adapter.addItem(new WeekInfoModel(10, "Graphic and Animation (2)"));
 
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         mainRVAdapter.setLayoutManager(layoutManager);
@@ -58,6 +64,15 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case 3:
                 intent = new Intent(this, Week6Activity.class);
+                break;
+            case 4:
+                intent = new Intent(this, Week7Activity.class);
+                break;
+            case 5:
+                intent = new Intent(this, Week9Activity.class);
+                break;
+            case 6:
+                intent = new Intent(this, Week10Activity.class);
                 break;
             default:
                 return;
