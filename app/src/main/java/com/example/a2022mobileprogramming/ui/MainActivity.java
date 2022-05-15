@@ -6,10 +6,14 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+
 import com.example.a2022mobileprogramming.adapter.MainRVAdapter;
 import com.example.a2022mobileprogramming.databinding.ActivityMainBinding;
 import com.example.a2022mobileprogramming.model.WeekInfoModel;
+import com.example.a2022mobileprogramming.ui.assign.AssignActivity;
 import com.example.a2022mobileprogramming.ui.week10.Week10Activity;
+import com.example.a2022mobileprogramming.ui.week11.Week11Activity;
 import com.example.a2022mobileprogramming.ui.week2.Week2Activity;
 import com.example.a2022mobileprogramming.ui.week3.Week3Activity;
 import com.example.a2022mobileprogramming.ui.week5.Week5Activity;
@@ -37,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         adapter.addItem(new WeekInfoModel(7, "Graphic and Animation (1)"));
         adapter.addItem(new WeekInfoModel(9, "Kotlin"));
         adapter.addItem(new WeekInfoModel(10, "Graphic and Animation (2)"));
+        adapter.addItem(new WeekInfoModel(11, "Data (Spf, File, SQLite)"));
 
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         mainRVAdapter.setLayoutManager(layoutManager);
@@ -46,6 +51,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemclick(View v, int position) {
                 startNextActivity(position);
+            }
+        });
+
+        binding.mainAssignBtn.setOnClickListener(new Button.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, AssignActivity.class));
             }
         });
     }
@@ -73,6 +85,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case 6:
                 intent = new Intent(this, Week10Activity.class);
+                break;
+            case 7:
+                intent = new Intent(this, Week11Activity.class);
                 break;
             default:
                 return;

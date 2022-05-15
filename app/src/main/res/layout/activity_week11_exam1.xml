@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Shared Preferences Login"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/week11_user_text_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="USERNAME"
+        android:textSize="20dp" />
+    <EditText
+        android:id="@+id/week11_user_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/week11_user_text_tv"
+        android:layout_toRightOf="@id/week11_user_text_tv" />
+
+    <TextView
+        android:id="@+id/week11_user_pw_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="PASSWORD"
+        android:textSize="20dp"
+        android:layout_below="@id/week11_user_text_tv"/>
+    <EditText
+        android:id="@+id/week11_user_pw_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_alignBaseline="@id/week11_user_pw_tv"
+        android:layout_toRightOf="@id/week11_user_pw_tv" />
+
+    <Button
+        android:id="@+id/week11_submit_btn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/week11_user_pw_tv"
+        android:layout_marginTop="60dp"
+        android:text="Submit" />
+
+    <Button
+        android:id="@+id/week11_exit_btn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/week11_user_pw_tv"
+        android:layout_toRightOf="@id/week11_submit_btn"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="110dp"
+        android:text="Exit" />
+
+
+</RelativeLayout>

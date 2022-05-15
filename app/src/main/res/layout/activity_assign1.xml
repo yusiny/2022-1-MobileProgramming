@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.week5.Week5AssignActivity">
+    tools:context=".ui.assign.assign1.Assign1Activity">
 
     <!--Edittext: 이름, 학과, 학번-->
     <EditText

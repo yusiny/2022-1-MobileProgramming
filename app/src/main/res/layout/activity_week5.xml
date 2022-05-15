@@ -15,7 +15,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="10dp"
-            android:text="Practice / Assignment" />
+            android:text="Practice" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -33,13 +33,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="[practice2] Checkbox and Radio Button"
-                style="@style/tv_btn" />
-
-            <Button
-                android:id="@+id/week5_assign1_btn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="[assignment1]"
                 style="@style/tv_btn" />
 
         </LinearLayout>

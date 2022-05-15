@@ -1,4 +1,4 @@
-package com.example.a2022mobileprogramming.ui.week5
+package com.example.a2022mobileprogramming.ui.assign.assign1
 
 import android.app.Activity
 import androidx.appcompat.app.AppCompatActivity
@@ -8,7 +8,7 @@ import android.widget.EditText
 import android.widget.Toast
 import com.example.a2022mobileprogramming.R
 
-class Week5AssignNextAcitivity : AppCompatActivity(){
+class Assign1NextAcitivity : AppCompatActivity(){
 
     private lateinit var urlEt: EditText
     private lateinit var phoneEt: EditText
@@ -16,7 +16,7 @@ class Week5AssignNextAcitivity : AppCompatActivity(){
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_week5_assign_next)
+        setContentView(R.layout.activity_assign1_next)
 
         // Set view for each variables
         urlEt = findViewById(R.id.url_et)

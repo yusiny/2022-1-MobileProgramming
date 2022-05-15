@@ -28,6 +28,22 @@
             </intent-filter>
         </activity>
 
+        <!-- Assignments -->
+        <activity
+            android:name=".ui.assign.AssignActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".ui.assign.assign1.Assign1Activity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.assign.assign1.Assign1NextAcitivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".ui.assign.assign2.Assign2Activity"
+            android:exported="true" />
+
         <!-- Week2: View and Layouts -->
         <activity
             android:name=".ui.week2.Week2Activity"
@@ -68,12 +84,6 @@
             android:exported="true" />
         <activity
             android:name=".ui.week5.Week5Prac2Activity"
-            android:exported="true" />
-        <activity
-            android:name=".ui.week5.Week5AssignActivity"
-            android:exported="true" />
-        <activity
-            android:name=".ui.week5.Week5AssignNextAcitivity"
             android:exported="true" />
         <activity
             android:name=".ui.week5.Week5Exam1Activity"
@@ -130,6 +140,15 @@
         <!-- Week11: Data (Data persistence, sqlite db, data networking) -->
         <activity
             android:name=".ui.week11.Week11Activity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.week11.Week11Exam1Activity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.week11.Week11Exam2Activity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.week11.Week11Exam3Activity"
             android:exported="true" />
     </application>
 </manifest>

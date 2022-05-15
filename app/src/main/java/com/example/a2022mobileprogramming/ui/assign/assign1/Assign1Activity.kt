@@ -1,4 +1,4 @@
-package com.example.a2022mobileprogramming.ui.week5
+package com.example.a2022mobileprogramming.ui.assign.assign1
 
 import android.app.Activity
 import android.content.Intent
@@ -10,7 +10,7 @@ import android.widget.EditText
 import android.widget.Toast
 import com.example.a2022mobileprogramming.R
 
-class Week5AssignActivity: AppCompatActivity() {
+class Assign1Activity: AppCompatActivity() {
     // variables for Edittext
     private lateinit var nameEt: EditText
     private lateinit var departmentEt: EditText
@@ -29,7 +29,7 @@ class Week5AssignActivity: AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_week5_assign)
+        setContentView(R.layout.activity_assign1)
 
         // Set view for each variables
         nameEt = findViewById(R.id.name_et)
@@ -56,7 +56,7 @@ class Week5AssignActivity: AppCompatActivity() {
 
             // Check whether all information are entered
             if(name != "" && department != "" && id != ""){
-                val intent = Intent(this@Week5AssignActivity, Week5AssignNextAcitivity::class.java)
+                val intent = Intent(this@Assign1Activity, Assign1NextAcitivity::class.java)
 
                 val bundle = Bundle()
                 bundle.putString("name", name)

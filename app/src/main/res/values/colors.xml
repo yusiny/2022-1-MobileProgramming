@@ -9,4 +9,8 @@
     <color name="gray">#3E3E3E</color>
     <color name="light_gray">#DCDCDC</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="cyan">#FF00DDFF</color>
+    <color name="blue">#3700B3</color>
+    <color name="purple">#FFAA66CC</color>
 </resources>

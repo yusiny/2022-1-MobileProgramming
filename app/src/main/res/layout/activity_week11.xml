@@ -1,7 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            style="@style/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:text="Example" />
+
+        <Button
+            android:id="@+id/week11_exam1_btn"
+            style="@style/tv_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="[example1] Shared Preference" />
+        <Button
+            android:id="@+id/week11_exam2_btn"
+            style="@style/tv_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="[example2] Internal Storage(File)" />
+        <Button
+            android:id="@+id/week11_exam3_btn"
+            style="@style/tv_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="[example3] SQLite" />
+
+    </LinearLayout>
+</ScrollView>
