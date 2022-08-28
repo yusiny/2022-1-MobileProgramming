@@ -14,6 +14,8 @@ import com.example.a2022mobileprogramming.model.WeekInfoModel;
 import com.example.a2022mobileprogramming.ui.assign.AssignActivity;
 import com.example.a2022mobileprogramming.ui.week10.Week10Activity;
 import com.example.a2022mobileprogramming.ui.week11.Week11Activity;
+import com.example.a2022mobileprogramming.ui.week12.Week12Activity;
+import com.example.a2022mobileprogramming.ui.week13.Week13Activity;
 import com.example.a2022mobileprogramming.ui.week2.Week2Activity;
 import com.example.a2022mobileprogramming.ui.week3.Week3Activity;
 import com.example.a2022mobileprogramming.ui.week5.Week5Activity;
@@ -42,6 +44,8 @@ public class MainActivity extends AppCompatActivity {
         adapter.addItem(new WeekInfoModel(9, "Kotlin"));
         adapter.addItem(new WeekInfoModel(10, "Graphic and Animation (2)"));
         adapter.addItem(new WeekInfoModel(11, "Data (Spf, File, SQLite)"));
+        adapter.addItem(new WeekInfoModel(12, "Multimedia and Location Service "));
+        adapter.addItem(new WeekInfoModel(13, "Sensor "));
 
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         mainRVAdapter.setLayoutManager(layoutManager);
@@ -88,6 +92,12 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case 7:
                 intent = new Intent(this, Week11Activity.class);
+                break;
+            case 8:
+                intent = new Intent(this, Week12Activity.class);
+                break;
+            case 9:
+                intent = new Intent(this, Week13Activity.class);
                 break;
             default:
                 return;

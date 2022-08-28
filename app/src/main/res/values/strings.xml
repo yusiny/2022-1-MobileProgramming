@@ -35,4 +35,12 @@
     <string name="button_menu">메뉴</string>
     <string name="title_listview">ListView Fragment</string>
     <string name="title_spinner">Spinner Fragment</string>
+
+    <!--Assign 3-->
+    <string name="record">기록</string>
+    <string name="back">돌아가기</string>
+    <string name="stop">중지</string>
+    <string name="pause">일시정지</string>
+    <string name="more">더보기</string>
+    <string name="start">시작</string>
 </resources>

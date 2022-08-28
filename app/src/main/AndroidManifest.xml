@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.a2022mobileprogramming" >
 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:networkSecurityConfig="@xml/network_security_config"
         android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.2022MobileProgramming" >
+        android:theme="@style/Theme.2022MobileProgramming"
+        tools:targetApi="n">
         <service
             android:name=".ui.week5.MyService"
             android:enabled="true"
@@ -150,5 +155,28 @@
         <activity
             android:name=".ui.week11.Week11Exam3Activity"
             android:exported="true" />
+        <activity
+            android:name=".ui.week11.Week11Exam4Activity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.week11.Week11Exam5Activity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.week11.Week11Exam6Activity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.week11.Week11Exam7Activity"
+            android:exported="true" />
+
+        <!--Week 12: Multimedia & Location Service -->
+        <activity
+            android:name=".ui.week12.Week12Activity"
+            android:exported="true" />
+
+        <!--Week 13: Sensor -->
+        <activity
+            android:name=".ui.week13.Week13Activity"
+            android:exported="true" />
+
     </application>
 </manifest>

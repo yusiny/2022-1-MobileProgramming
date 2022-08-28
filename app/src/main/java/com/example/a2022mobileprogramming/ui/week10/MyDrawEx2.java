@@ -22,7 +22,9 @@ public class MyDrawEx2 extends View {
     private int nAngle = 0;
 
     public void init(){
-        Resources res = getResources();
+        mPaint = new Paint();
+
+        Resources res = getResources(); //리소스 가져오기
         mAndroidGreen = BitmapFactory.decodeResource(res, R.drawable.android_green);
         mAndroidRed = BitmapFactory.decodeResource(res, R.drawable.android_red);
     }
@@ -41,7 +43,7 @@ public class MyDrawEx2 extends View {
     public boolean onTouchEvent(MotionEvent event) {
         if(event.getAction() == MotionEvent.ACTION_UP){ // 눌렀다가 뗀 상태이면?
             nAngle = nAngle + 5;
-            invalidate();
+            invalidate(); // 현재 명령 무효화 -> 다시 그려라
         }
 
         return true;

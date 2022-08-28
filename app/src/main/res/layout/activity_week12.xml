@@ -9,31 +9,35 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <!-- Example 1 = Audio Player -->
         <TextView
             style="@style/tv_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="10dp"
-            android:text="Example - Persistent Data" />
+            android:layout_marginVertical="10dp"
+            android:text="Example - Audio Player" />
 
         <Button
-            android:id="@+id/week11_exam1_btn"
-            style="@style/tv_btn"
+            android:id="@+id/week12_exam1_play_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="[example1] Shared Preference" />
+            android:text="Play"/>
         <Button
-            android:id="@+id/week11_exam2_btn"
-            style="@style/tv_btn"
+            android:id="@+id/week12_exam1_stop_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="[example2] Internal Storage(File)" />
+            android:text="Stop"/>
         <Button
-            android:id="@+id/week11_exam3_btn"
-            style="@style/tv_btn"
+            android:id="@+id/week12_exam1_pause_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="[example3] SQLite" />
+            android:text="Pause"/>
+        <Button
+            android:id="@+id/week12_exam1_restart_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Restart"/>
 
         <View
             android:layout_width="match_parent"
@@ -41,38 +45,24 @@
             android:layout_marginVertical="30dp"
             android:background="@color/light_gray" />
 
+        <!-- Example 2 = Video Player -->
         <TextView
             style="@style/tv_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="10dp"
-            android:text="Example - Thread" />
+            android:text="Example - Video Player" />
 
         <Button
-            android:id="@+id/week11_thread_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="보여주기"
-            android:layout_gravity="center" />
-        <TextView
-            android:id="@+id/week11_thread_tv"
+            android:id="@+id/week12_video_play_btn"
             android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:layout_gravity="center" />
+            android:layout_height="wrap_content"
+            android:text="play" />
 
-        <Button
-            android:id="@+id/week11_exam4_btn"
-            style="@style/tv_btn"
+        <VideoView
+            android:id="@+id/week12_video_view"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="[example4] Thread - Event handler(1) " />
-        <Button
-            android:id="@+id/week11_exam5_btn"
-            style="@style/tv_btn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="[example5] Thread - Event handler(2)" />
-
+            android:layout_height="wrap_content" />
 
         <View
             android:layout_width="match_parent"
@@ -80,25 +70,30 @@
             android:layout_marginVertical="30dp"
             android:background="@color/light_gray" />
 
+        <!-- Example 2 = Video Player -->
         <TextView
             style="@style/tv_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="10dp"
-            android:text="Practice" />
-        <Button
-            android:id="@+id/week11_exam6_btn"
-            style="@style/tv_btn"
-            android:layout_width="match_parent"
+            android:text="Example - Location" />
+
+        <TextView
+            android:id="@+id/week12_mylocation_tv"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="[Practice] AsyncTask" />
+            android:text="내 위치: "
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:layout_marginVertical="10dp"/>
 
         <Button
-            android:id="@+id/week11_exam7_btn"
-            style="@style/tv_btn"
-            android:layout_width="match_parent"
+            android:id="@+id/week12_mylocation_btn"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="[Practice] Data Networking" />
+            android:text="내 위치를 알려줘"
+            android:layout_gravity="center"
+            android:layout_marginVertical="10dp"/>
 
     </LinearLayout>
 </ScrollView>
